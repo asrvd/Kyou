@@ -1,0 +1,1 @@
+worker: node kyou.js
