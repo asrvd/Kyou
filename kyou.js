@@ -4,8 +4,7 @@ const { Client, Collection, Intents } = require('discord.js');
 
 // Create a new client instance
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
-client.user.setActivity('discord.js', { type: 'WATCHING' });
-client.user.setStatus('online');
+
 
 client.commands = new Collection();
 
@@ -20,6 +19,8 @@ for (const file of commandFiles) {
 
 // When the client is ready, run this code (only once)
 client.once('ready', () => {
+    client.user.setActivity('ASHISH DEVELOPING ME!', { type: 'WATCHING' });
+    client.user.setStatus('online');
 	console.log('>> Kyou is awaking...');
 	const Guilds = client.guilds.cache.map(guild => guild.id);
     console.log(`>> Servers : ${Guilds.length}`);
