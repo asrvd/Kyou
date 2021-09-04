@@ -2,6 +2,9 @@
   "name": "kyou",
   "version": "1.0.0",
   "description": "Multipurpose Discord Bot under development powered by discord.js",
+  "engines": {
+    "node": "16.6.1"
+  },
   "main": "kyou.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
