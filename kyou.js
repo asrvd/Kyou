@@ -4,6 +4,8 @@ const { Client, Collection, Intents } = require('discord.js');
 
 // Create a new client instance
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
+client.user.setActivity('discord.js', { type: 'WATCHING' });
+client.user.setStatus('online');
 
 client.commands = new Collection();
 
