@@ -6,10 +6,10 @@ const weeby = new WeebyAPI(process.env.weeby_token.toString());
 
 module.exports = {
 	data: new SlashCommandBuilder()
-		.setName('roast')
-		.setDescription('Roast anyone not really though')
-        .addStringOption(option => option.setName('message').setDescription('Optional Message'))
-		.addUserOption(option => option.setName('user').setDescription('The user to roast')),
+		.setName('rip')
+		.setDescription('RIP anyone OwO')
+        .addUserOption(option => option.setName('user').setDescription('The user to RIP'))
+        .addStringOption(option => option.setName('message').setDescription('Optional Message')),
 	async execute(interaction) {
 		let user = interaction.options.getUser('user');
         let message = interaction.options.getString('message');
