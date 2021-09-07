@@ -19,7 +19,7 @@ for (const file of commandFiles) {
 
 // When the client is ready, run this code (only once)
 client.once('ready', () => {
-    client.user.setActivity('ASHISH DEVELOPING ME!', { type: 'WATCHING' });
+    client.user.setActivity('ASHISH DEVELOPE ME!', { type: 'WATCHING' });
     client.user.setStatus('online');
 	console.log('>> Kyou is awaking...');
 	const Guilds = client.guilds.cache.map(guild => guild.id);
