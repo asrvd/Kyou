@@ -19,7 +19,7 @@ module.exports = {
         if (!message) {
             message = "R.I.P";
         }
-        await weeby.generators.rip({ avatar: user.displayAvatarUrl({format: 'png', size: 512}), username: user.username, message: message });
+        await weeby.generators.rip({ avatar: user.displayAvatarURL({format: 'png', size: 512}), username: user.username, message: message });
 		return interaction.reply({files: [new MessageAttachment(im, `rip.png`)]});
 	},
 };
